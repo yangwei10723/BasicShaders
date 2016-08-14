@@ -1,14 +1,30 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-
+Project("{016D5093-C371-B01B-D87C-0BBE14F4F78C}") = "BasicShaders", "Assembly-CSharp-firstpass.csproj", "{02848E78-F00B-F66F-11F8-347024694BAA}"
+EndProject
+Project("{016D5093-C371-B01B-D87C-0BBE14F4F78C}") = "BasicShaders", "Assembly-CSharp.csproj", "{891F4E3C-0057-A64F-A4F1-623C8C40731B}"
+EndProject
+Project("{016D5093-C371-B01B-D87C-0BBE14F4F78C}") = "BasicShaders", "Assembly-CSharp-Editor.csproj", "{8A7843D4-5B14-8095-8460-F441DCB95C60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{02848E78-F00B-F66F-11F8-347024694BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02848E78-F00B-F66F-11F8-347024694BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02848E78-F00B-F66F-11F8-347024694BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02848E78-F00B-F66F-11F8-347024694BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{891F4E3C-0057-A64F-A4F1-623C8C40731B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{891F4E3C-0057-A64F-A4F1-623C8C40731B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{891F4E3C-0057-A64F-A4F1-623C8C40731B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{891F4E3C-0057-A64F-A4F1-623C8C40731B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A7843D4-5B14-8095-8460-F441DCB95C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A7843D4-5B14-8095-8460-F441DCB95C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A7843D4-5B14-8095-8460-F441DCB95C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A7843D4-5B14-8095-8460-F441DCB95C60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

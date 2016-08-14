@@ -14,36 +14,16 @@
 		Pass
 		{
 			CGPROGRAM
-			#pragma vertex vert
+			#pragma vertex vert_img
 			#pragma fragment frag
 			#pragma multi_compile __ SMOOTH
 
 			#include "UnityCG.cginc"
-
-			struct appdata
-			{
-				float4 vertex : POSITION;
-				float2 uv : TEXCOORD0;
-			};
-
-			struct v2f
-			{
-				float2 uv : TEXCOORD0;
-				float4 vertex : SV_POSITION;
-			};
-
-			v2f vert (appdata v)
-			{
-				v2f o;
-				o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
-				o.uv = v.uv;
-				return o;
-			}
 			
 			sampler2D _MainTex;
 			float _VignetteInstensity;
 
-			fixed4 frag (v2f i) : SV_Target
+			fixed4 frag (v2f_img i) : SV_Target
 			{
 				float2 uv =( i.uv - 0.5) * 2;	// 将uv坐标转换到[-1, 1]区间，原点是屏幕中间
 				//float uvDot = sqrt(dot(uv, uv));		// 计算转换后的uv坐标到屏幕中间的距离
